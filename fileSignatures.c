@@ -209,9 +209,9 @@ static void usage(const char *prog)
 //main functions
 int main(int argc, char **argv)
 {
-    if (argc < 3) { usage(argv[0]); return 2; }
+    if (argc < 3) { usage(argv[0]); return 2; } 
  
-    const char *cmd = argv[1], *path = argv[2];
+    const char *cmd = argv[1], *path = argv[2]; //change to user input
  
     if (strcmp(cmd, "info") == 0 && argc == 3) return cmd_info(path);
     if (strcmp(cmd, "scan") == 0 && argc == 3) return cmd_scan(path);
